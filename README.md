@@ -19,8 +19,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ahmedmelfay/REST-Countries-API)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/ahmedmelfay/REST-Countries-API)
 
 ## My process
 
