@@ -1,0 +1,351 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Theme Switcher Classes*/
+.dark-mode-text {
+  color: #ffffff;
+}
+
+.dark-mode-element {
+  background-color: #2b3945;
+}
+
+.dark-mode-bg {
+  background-color: #202c37;
+}
+
+.light-mode-text {
+  color: #111517;
+}
+
+.light-mode-element {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 3px 2px #c2c2c2;
+          box-shadow: 0 0 3px 2px #c2c2c2;
+}
+
+.light-mode-bg {
+  background-color: #fafafa;
+}
+
+/**/
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.container {
+  padding: 1.875rem 1rem;
+}
+
+nav .logo {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+nav .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .change-theme {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+nav .fa-moon {
+  margin-right: 15px;
+}
+
+#home .top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#home .search {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 3px 2px #c2c2c2;
+          box-shadow: 0 0 3px 2px #c2c2c2;
+}
+
+#home .search i {
+  margin-left: 2rem;
+}
+
+#home .search input {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1.25rem 1.625rem;
+  font-size: 1.2rem;
+}
+
+#home .light-mode-input {
+  color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+#home .dark-mode-input {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+#home #filter {
+  margin-top: 40px;
+  position: relative;
+}
+
+#home #filter .select {
+  padding: 20px 24px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#home #filter i {
+  margin-left: 10px;
+}
+
+#home #filter .regions {
+  border-radius: 8px;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#home #filter .region-open {
+  padding: 20px 24px;
+  max-height: 350px;
+}
+
+#home #filter .region-closed {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  max-height: 0;
+}
+
+#home #filter .region-links {
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+#home #countries .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#home #countries .item {
+  width: 100%;
+  padding: 32px 20px;
+  border-radius: 8px;
+}
+
+#home #countries .item-image {
+  height: 160px;
+  width: 100%;
+}
+
+#home #countries .item-image img {
+  height: 100%;
+  width: 100%;
+}
+
+#home #countries .item-content {
+  padding: 24px 0 24px 24px;
+}
+
+#home #countries .item-details {
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+#home #countries span {
+  font-weight: 300;
+  margin-left: 2px;
+}
+
+#home #countries .item-detail {
+  padding: 6px 0;
+}
+
+#home #countries .item-inner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#home #countries h2 {
+  font-size: 1rem;
+}
+
+#details .back-btn {
+  margin: 40px 0 84px;
+}
+
+#details .back-btn:hover {
+  color: unset;
+}
+
+#details .back-btn-inner {
+  border-radius: 8px;
+  padding: 16px 32px;
+}
+
+#details i {
+  margin-right: 16px;
+}
+
+#details .country-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#details .country-img {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#details .country-details {
+  margin: 44px 0 62px;
+  width: 100%;
+}
+
+#details .detail-section-1 {
+  margin-top: 32px;
+}
+
+#details .detail-section-2 {
+  margin: 32px 0;
+}
+
+#details p {
+  padding: 16px 0;
+}
+
+#details .borders {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#details .border-country {
+  margin: 20px 0 20px;
+  width: 33.33%;
+}
+
+#details .border-country-inner {
+  border-radius: 8px;
+  padding: 8px 50px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #home #countries .item {
+    width: 50%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #home .search {
+    width: 50%;
+  }
+  #home #filter {
+    margin-top: unset;
+  }
+  #home #countries .item {
+    width: 33.33%;
+  }
+  #home #countries .items {
+    margin: 0 -20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    padding: 1.875rem 5rem;
+  }
+  #home #countries .item {
+    width: 25%;
+  }
+  #details .country-details {
+    width: 40%;
+  }
+  #details .country-img {
+    padding: 140px 100px 140px 0;
+    width: 60%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*# sourceMappingURL=style.css.map */
